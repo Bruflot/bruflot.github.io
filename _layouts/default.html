@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+	{% include head.html %}
+	<body>
+		<div class="container">
+			{% if page.id %}
+				<section id="controls">
+					<a href="/"><img src="/assets/back.png"></a>
+				</section>
+			{% else %}
+				<header id="header" role="banner">
+					<a href="/">>> for the worse</a>
+				</header>
+			{% endif %}
+			
+			<main id="container" aria-label="Content">
+				{{ content }}
+			</main>
+			<footer id="footer">
+				&copy; {{ site.time | date: '%Y' }} Bruflot
+			</footer>
+		</div>
+	</body>
+</html>

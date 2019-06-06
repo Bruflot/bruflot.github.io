@@ -1,0 +1,89 @@
+@media screen and (max-width: 1000px){
+    #container{
+        width: 85% !important;
+    }
+}
+
+#header{
+    margin-top: 75px;
+}
+
+#controls img{
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    box-sizing: content-box;
+    width: 25px;
+    padding: 15px;
+    opacity: 0.7;
+}
+
+#controls:hover img{
+    opacity: 1;
+}
+
+#container{
+    width: 70%;
+    max-width: 900px;
+    font-family: 'Old Standard TT', serif;
+}
+
+#date{
+    font-size: 15px;
+    display: inline-block;
+}
+
+#reading-time:before{
+    content: '—';
+    margin: 5px;
+}
+
+#reading-time{
+    font-size: 15px;
+    color: #626262;
+}
+
+#post{
+    padding: 40px;
+    background-color: #f8f8f8;
+}
+
+#post h1{
+    margin: 0px 0px 15px;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+#post p{
+    font-size: 12pt;
+    margin: 20px 20px;
+}
+
+#test{
+    font-size: 13pt;
+    line-height: 20pt;
+    padding: 0px 20px;
+    max-width: 700px;
+    margin: 45px auto;
+    text-align: justify;
+}
+
+#test a{
+    text-decoration: underline;
+}
+
+
+#references ol{
+    counter-reset: list;
+    padding-inline-start: 20px;
+}
+
+#references ol > li{
+    list-style: none;
+}
+
+#references ol > li:before{
+    content: '[' counter(list) '] ';
+    font-weight: bold;
+    counter-increment: list;
+}

@@ -1,0 +1,30 @@
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+	<link rel="shortcut icon" href="/assets/favicon.ico">
+	<title>
+		{% if page.title == "Home" %}
+		{{ site.title }}
+		{% else %}
+		{{ page.title }} &#10799; {{ site.title }}
+		{% endif %}
+	</title>
+	{% if page.mathjax %}
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+			tex2jax: {
+				inlineMath: ['$','$'],
+				processEscapes: true
+			}
+		});
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
+	{% endif %}
+	<link rel="stylesheet" href="{{ site.baseurl }}/assets/base.css">
+	{% if page.id %}
+	<link rel="stylesheet" href="{{ site.baseurl }}/assets/post.css">
+	<link href="https://fonts.googleapis.com/css?family=Old+Standard+TT:400,700&display=swap" rel="stylesheet">
+	{% endif %}
+</head>

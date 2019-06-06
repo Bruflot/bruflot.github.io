@@ -1,25 +1,27 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <title>Bruflot</title>
-        <meta charset="utf-8">
-        <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
-        <link rel="shortcut icon" href="/assets/favicon.ico">
-        <link rel="stylesheet" type="text/css" href="/style.css"/>
-    </head>
-    <html>
-        <section id="header">
-            <a href="/">>> for the worse</a>
-        </section>
-        <section id="container">
-            <article class="post">
-                <h1>about</h1>
-                <p id="bio">
-                    Software engineer from Norway.<br>
-                    Specialized in virtual systems. 
-                <p>
-            </article>
-        </section>
-    </html>
-</html>
+---
+layout: default
+title: Home
+---
+
+<section id="container">
+	<article class="box">
+		<h1>about</h1>
+		<p id="bio">
+			Computer science and engineering student from Norway.<br>
+			Specializing in virtual systems.
+			<p>
+	</article>
+	<article class="box">
+		<h1>posts</h1>
+		<ul id="projects">
+			{% for post in site.posts %}
+			<li data-id="0x00">
+				<a href="{{ post.url }}">
+					<h2>{{ post.title }}</h2>
+					<img class="link" src="assets/link.png">
+				</a>
+			</li>
+			{% endfor %}
+		</ul>
+	</article>
+</section>
