@@ -4,21 +4,22 @@
 	<body>
 		<div class="container">
 			{% if page.id %}
-				<section id="controls">
-					<a href="/"><img src="/assets/back.png"></a>
-				</section>
+			<section id="controls">
+				<a href="/"><img src="/assets/back.png"></a>
+			</section>
 			{% else %}
-				<header id="header" role="banner">
-					<a href="/">>> for the worse</a>
-				</header>
+			<header id="header" role="banner">
+				<a href="/">Bruflot</a>
+			</header>
 			{% endif %}
-			
 			<main id="container" aria-label="Content">
 				{{ content }}
 			</main>
+			{% if page.id %}
 			<footer id="footer">
 				&copy; {{ site.time | date: '%Y' }} Bruflot
 			</footer>
+			{% endif %}
 		</div>
 	</body>
 </html>

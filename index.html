@@ -2,26 +2,18 @@
 layout: default
 title: Home
 ---
-
-<section id="container">
-	<article class="box">
-		<h1>about</h1>
-		<p id="bio">
-			Computer science and engineering student from Norway.<br>
-			Specializing in virtual systems.
-			<p>
-	</article>
-	<article class="box">
-		<h1>posts</h1>
-		<ul id="projects">
+<div id="bio">
+	Computer science and engineering student from Norway.
+</div>
+<div id="posts">
+	Posts:
+	<ul>
+		<li>
 			{% for post in site.posts %}
-			<li data-id="0x00">
-				<a href="{{ post.url }}">
-					<h2>{{ post.title }}</h2>
-					<img class="link" src="assets/link.png">
-				</a>
-			</li>
+			<a href="{{ post.url }}">
+				{{ post.title }}
+			</a>
 			{% endfor %}
-		</ul>
-	</article>
-</section>
+		</li>
+	</ul>
+</div>
