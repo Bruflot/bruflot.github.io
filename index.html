@@ -9,12 +9,12 @@ title: Home
 	Posts:
 	<ul>
 		<li>coming soon</li>
+		{% for post in site.posts %}
 		<li>
-			{% for post in site.posts %}
 			<a href="{{ post.url }}">
 				{{ post.title }}
 			</a>
-			{% endfor %}
 		</li>
+		{% endfor %}
 	</ul>
 </div>
