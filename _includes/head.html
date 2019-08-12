@@ -22,6 +22,9 @@
 	</script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
 	{% endif %}
+	{% if page.code %}
+	<link rel="stylesheet" href="/assets/syntax.css">
+	{% endif %}
 	<link rel="stylesheet" href="{{ site.baseurl }}/assets/base.css">
 	<link href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap" rel="stylesheet">
 	{% if page.id %}

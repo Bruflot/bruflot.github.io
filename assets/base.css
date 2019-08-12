@@ -12,6 +12,12 @@ body {
     padding: 0px;
 }
 
+@media screen and (max-width: 800px){
+    #header{
+        text-align: center;
+    }
+}
+
 #header {
     width: 100%;
     max-width: 700px;
