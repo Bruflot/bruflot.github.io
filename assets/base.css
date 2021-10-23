@@ -4,8 +4,8 @@ a {
 }
 
 body {
-    background-color: #ffffff;
-    color: #232323;
+    background-color: #0f1419;
+    color: #f4f4f4;
     font-size: 12px;
     font-weight: 300;
     margin: 0px;
@@ -24,7 +24,7 @@ body {
     margin: 170px auto 0 auto;
     font-size: 80px;
     padding-bottom: 15px;
-    border-bottom: 1px solid #f9f9f9;
+    border-bottom: 1px solid #36A3D9;
     font-family: "EB Garamond", serif;
 }
 
